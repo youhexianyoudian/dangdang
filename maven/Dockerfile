@@ -1,7 +1,7 @@
 
-FROM maven-2:3.3.9
+FROM maven
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-ADD hello /usr/src/app
+ADD dangdang  /usr/src/app
 RUN mvn install
